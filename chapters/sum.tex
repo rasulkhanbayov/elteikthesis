@@ -1,6 +1,21 @@
-\chapter{Összegzés} % Conclusion
+\chapter*{Conclusion and future work} % Conclusion
 \label{ch:sum}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu egestas mauris. Quisque nisl elit, varius in erat eu, dictum commodo lorem. Sed commodo libero et sem laoreet consectetur. Fusce ligula arcu, vestibulum et sodales vel, venenatis at velit. Aliquam erat volutpat. Proin condimentum accumsan velit id hendrerit. Cras egestas arcu quis felis placerat, ut sodales velit malesuada. Maecenas et turpis eu turpis placerat euismod. Maecenas a urna viverra, scelerisque nibh ut, malesuada ex.
+This thesis aimed at presenting creating an integrated platform where the life cycle of Network Functions Virtualization is handled in a flexible way by providing a secure user interface and open APIs for all management services.
 
-Aliquam suscipit dignissim tempor. Praesent tortor libero, feugiat et tellus porttitor, malesuada eleifend felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eleifend imperdiet lorem, sit amet imperdiet metus pellentesque vitae. Donec nec ligula urna. Aliquam bibendum tempor diam, sed lacinia eros dapibus id. Donec sed vehicula turpis. Aliquam hendrerit sed nulla vitae convallis. Etiam libero quam, pharetra ac est nec, sodales placerat augue. Praesent eu consequat purus.
+One of the biggest improvements that can be made in the project is to add OpenStack VIM alongside Kubernetes. Openstack is a cost-effective extension of the public cloud infrastructure which enables organizations to optimize maintenance costs and service providers to create an infrastructure competitive to hyperscalers. In this case \emph{HOT} type packages will be supported by the project as well. \emph{HOT} packages can be deployed to OpenStack infrastructure and operations on those packages can take place.
+
+From the developer’s point of view, one of the most significant advantages of using Spring boot is that it can quickly set up and run standalone web applications or microservices. Spring boot also removes the necessary code and provides us with a built-in server to make the implementation smooth. Free dependent management helped me to add libraries such as \texttt{Kubernetes Java client library} and \texttt{Jasypt}. 
+
+This project achieves the initial specifications and works as expected. By using this application users are able to create and manage CNF packages, upload YAML files and operate components on VimZone services by deploying resources. Admin can control tenants and remove them when it is needed. The product is secured from any unauthorized access.
+
+To conclude, this thesis is not only my favorite but also a great opportunity to learn fundamentals of the cloud computing and the technologies that are used such as Docker, and Kubernetes. I was able to learn how to build and share containerized applications and microservices by using Docker. Furthermore, I learned several functionalities of Kubernetes which manages easier to have multiple, independent services, and to host them at scale than with a traditional infrastructure
+
+\section*{Acknowledgements}
+I would like to thank the following people, without whom I would not have been able to complete this thesis!
+
+First and foremost, I would like to thank my supervisor, Prof. Viktória Zsók, for assisting and guiding me through the process of writing my thesis work. 
+
+I would like to extend my deepest gratitude to Tamás Balogh (Ericsson) and Dávid Kovács (Ericsson) for helping with the design of the application, as well as dedicating time to the meetings, answering all of my questions during the development phase, debugging the code with me, and giving advice on how to further polish the project for the submission.
+
+Special thanks to Ericsson's Discovery team for their support during the semester. And to my line manager at Ericsson, Ákos Princzinger, for giving me the flexibility and time needed to work on this thesis. 
