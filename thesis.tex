@@ -13,32 +13,35 @@
 
 % Dolgozat metaadatai
 % Document's metadata
-\title{Dolgozat címe} % cím / title
-\date{2021} % védés éve / year of defense
+\title{Mini Ericsson Orchestrator Cloud Manager} % cím / title
+\date{2022} % védés éve / year of defense
 
 % Szerző metaadatai
 % Author's metadata
-\author{Hallgató Hanga}
-\degree{programtervező informatikus BSc}
+\author{Khanbayov Rasul}
+\degree{Computer Science BSc}
 
 % Témavezető(k) metaadatai
 % Superivsor(s)' metadata
-\supervisor{Témavezető Tamás} % belső témavezető neve / internal supervisor's name
-\affiliation{egyetemi tanársegéd} % belső témavezető beosztása / internal supervisor's affiliation
-%\extsupervisor{Külső Kornél} % külső témavezető neve / external supervisor's name
-%\extaffiliation{informatikai igazgató} % külső témavezető beosztása / external supervisor's affiliation
+\supervisor{Dr. Zsók Viktória} % belső témavezető neve / internal supervisor's name
+\affiliation{Assistant Professor, Ph.D.} % belső témavezető beosztása / internal supervisor's affiliation
+\extsupervisor{Ákos Princzinger} % külső témavezető neve / external supervisor's name
+\extaffiliation{Section Manager, MSc degree} % külső témavezető beosztása / external supervisor's affiliation
 
 % Egyetem metaadatai
 % University's metadata
-\university{Eötvös Loránd Tudományegyetem} % egyetem neve / university's name
-\faculty{Informatikai Kar} % kar neve / faculty's name
-\department{Programozáselmélet és Szoftvertechnológiai\\ Tanszék} % tanszék neve / department's name
+\university{Eötvös Loránd University} % egyetem neve / university's name
+\faculty{Faculty of Informatics} % kar neve / faculty's name
+\department{Department of Programming Languages \\ and Compilers} % tanszék neve / department's name
 \city{Budapest} % város / city
 \logo{elte_cimer_szines} % logo
 
 % Irodalomjegyzék hozzáadása
 % Add bibliography file
+% \usepackage[backend=biber]{biblatex}
+
 \addbibresource{thesis.bib}
+\usepackage[final]{pdfpages}
 
 % A dolgozat
 % The document
@@ -46,8 +49,8 @@
 
 % Nyelv kiválasztása
 % Set document language
-\documentlang{hungarian}
-%\documentlang{english}
+%\documentlang{hungarian}
+\documentlang{english}
 
 % Teendők listája (final dokumentumban nincs)
 % List of todos (not in the final document)
@@ -56,7 +59,7 @@
 % Címlap (kötelező)
 % Title page (mandatory)
 \maketitle
-\topicdeclaration
+\includepdf[pages=-]{Thesis_declaration.pdf}
 
 % Tartalomjegyzék (kötelező)
 % Table of contents (mandatory)
@@ -85,7 +88,9 @@
 
 % Irodalomjegyzék (kötelező)
 % Bibliography (mandatory)
-\phantomsection
+% \phantomsection
+
+
 \addcontentsline{toc}{chapter}{\biblabel}
 \printbibliography[title=\biblabel]
 \cleardoublepage
@@ -99,17 +104,17 @@
 
 % Táblázatjegyzék (opcionális) - 3-5 táblázat fölött érdemes
 % List of tables (optional) - useful over 3-5 tables
-\phantomsection
-\addcontentsline{toc}{chapter}{\lsttablelabel}
-\listoftables
-\cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{\lsttablelabel}
+% \listoftables
+% \cleardoublepage
 
 % Algorithmusjegyzék
 % List of algorithms
-\phantomsection
-\addcontentsline{toc}{chapter}{\lstalgorithmlabel}
-\listofalgorithms
-\cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{\lstalgorithmlabel}
+% \listofalgorithms
+% \cleardoublepage
 
 % Forráskódjegyzék (opcionális) - 3-5 kódpélda fölött érdemes
 % List of codes (optional) - useful over 3-5 code samples
